@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-ja ganz gut
-=======
-123
-
-Hey Max, wie willst du's haben?
->>>>>>> c83a54c2510eba9b78c2154555716402d953b846
+Schöne Test Datei.
+Man man.

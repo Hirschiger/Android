@@ -1,17 +1,15 @@
 package BastiMax.AppTest.main;
 
 import BastiMax.AppTest.dev.Console;
-import BastiMax.AppTest.game.GameEngine;
+import BastiMax.AppTest.game.Game;
 
-import android.app.Activity;
-import android.os.Bundle;
 import android.widget.TextView;
 
 public class Main extends Thread{
 	
 	private AppActivity app = null;
 	
-	private GameEngine game;
+	private Game game;
 	
 	public Main(AppActivity app)
 	{
@@ -27,24 +25,23 @@ public class Main extends Thread{
 	{
 		Console.WriteLine("init Main()...");
 			
-		game = new GameEngine();
-			
-			
-			
-					
+		game = new Game();
+
+		
 		Console.WriteLine("init Main() ok");
 	}
 		
 	public void run()
 	{
-		Console.WriteLine("starting Main()...");
+		
 		init();
-		Console.WriteLine("starting Main() ok");
+		Console.WriteLine("Main() start");
 		
 		game.start();
-		Console.WriteLine("" + game.isAlive());
+
 		while(game.isAlive());
-		Console.WriteLine("" + game.isAlive());
+
+		
 		Console.WriteLine("Main() exit");
 	}
 }

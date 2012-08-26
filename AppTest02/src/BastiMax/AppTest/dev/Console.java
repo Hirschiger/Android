@@ -5,7 +5,7 @@ import android.widget.TextView;
 public class Console {
 	
 	public static TextView  console = null;
-	public static int Lines = 17;
+	public static int Lines = 20;
 	
 	public static void initConsole(TextView console1)
 	{

@@ -14,7 +14,7 @@ public class GameEngine extends Thread{
 		
 		
 		
-		
+		Console.WriteLine("init...init...init...init");
 		
 		
 				
@@ -23,9 +23,8 @@ public class GameEngine extends Thread{
 	
 	public void run()
 	{
-		Console.WriteLine("starting GameEngine...");
 		init();
-		Console.WriteLine("starting GameEngine ok");
+		Console.WriteLine("GameEngine start");
 
 		for(int i = 0; i < 3; ++i)
 		{

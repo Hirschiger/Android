@@ -5,11 +5,14 @@ import android.os.Bundle;
 
 public class AppActivity extends Activity {
     /** Called when the activity is first created. */
+	
+	//private Main mainThread = null;
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        findViewById(R.layout.main);
-        Main mainthread = new Main(this);
+
+		Main mainThread = new Main(this);
     }
 }
